@@ -1,6 +1,10 @@
 module Specjour
   module DbScrub
-    load 'Rakefile'
+    require 'rake'
+    require 'rake/testtask'
+    require 'rake/rdoctask'
+    require 'tasks/rails'
+
     extend self
 
     def scrub
